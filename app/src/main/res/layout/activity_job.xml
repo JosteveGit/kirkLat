@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="glirt.motun.glirt2.GeneralUsers.jobActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:hint="Enter Creator Name or Username"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/user_address"
+        android:layout_margin="20dp"
+        android:hint="Address"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/user_location"
+                android:layout_margin="20dp"
+                android:hint="Location"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_pointdown"/>
+
+    <EditText
+        android:id="@+id/user_profession"
+        android:layout_margin="20dp"
+        android:hint="Profession"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_pointdown"/>
+
+
+
+
+    <EditText
+        android:id="@+id/userphone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Phone number"
+        android:inputType="phone"
+        />
+    <EditText
+        android:id="@+id/user_description"
+        android:layout_margin="20dp"
+        android:hint="Job Description with time or date it will expire"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btn_upload_data"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Job"
+        android:background="@drawable/button_background2"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@id/userphone_number"
+        />
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

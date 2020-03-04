@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image_profile"
+        android:layout_toEndOf="@id/image_profile"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_marginStart="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="profession"
+            android:id="@+id/user_profession"
+            android:drawableLeft="@drawable/ic_bussinessnam"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_name"
+            android:maxLines="1"
+            android:text="Full Name"
+            android:textSize="19dp"
+            android:drawableLeft="@drawable/ic_perm_identity_black_24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_address"
+            android:maxLines="1"
+            android:text="Address"
+            android:textSize="19dp"
+            android:drawableLeft="@drawable/ic_bussinessloca"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_description"
+            android:maxLines="1"
+            android:text="Job Description"
+            android:textSize="19dp"
+            
+            />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/button_background"
+        android:visibility="gone"
+        android:id="@+id/btn_follow"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+</LinearLayout>

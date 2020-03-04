@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="glirt.motun.glirt2.Fragment.SearchFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bar"
+        android:background="?android:attr/windowBackground">
+
+
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/heading_label"
+                android:layout_below="@+id/heading_label"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_toStartOf="@+id/search_btn"
+                android:background="@drawable/search_layout"
+                android:ems="10"
+                android:fontFamily="@font/nunito_semibold"
+                android:hint="Search here"
+                android:inputType="textPersonName"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:textColor="#999999"
+                android:textSize="16sp"
+                android:id="@+id/search_bar"
+                />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bar"
+        android:id="@+id/recycler_view"/>
+
+</RelativeLayout>

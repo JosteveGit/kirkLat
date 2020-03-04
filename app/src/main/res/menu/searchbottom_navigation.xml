@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/search_place"
+        android:icon="@drawable/ic_bussinessty"
+        android:title=""/>
+
+    <item
+        android:id="@+id/search_job"
+        android:icon="@drawable/search"
+        android:title=""/>
+</menu>
